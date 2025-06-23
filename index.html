@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>근로계약서 검토 시스템</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>근로계약서 검토 시스템</h1>
+            <div class="header-subtitle">고용노동부 표준근로계약서 기준 분석</div>
+        </div>
+    </div>
+
+    <div class="upload-section" id="uploadSection">
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📄</div>
+            <div class="upload-text">근로계약서를 드래그하거나 클릭하여 업로드</div>
+            <div class="upload-subtext">PDF, DOCX, TXT 파일 지원</div>
+            <input type="file" id="fileInput" class="file-input" accept=".pdf,.docx,.txt">
+        </div>
+    </div>
+
+    <div class="main-container" id="mainContainer">
+        <div class="split-view">
+            <div class="document-view">
+                <div class="document-content" id="documentContent">
+                    <!-- 문서 내용이 여기에 표시됩니다 -->
+                </div>
+            </div>
+            
+            <div class="analysis-view">
+                <div class="analysis-header">
+                    <div class="analysis-title">검토 결과</div>
+                    <div class="analysis-summary">
+                        <div class="summary-item">
+                            <div class="summary-number issue-high" id="highCount">0</div>
+                            <div class="summary-label">필수 수정</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-number issue-medium" id="mediumCount">0</div>
+                            <div class="summary-label">권장 수정</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-number issue-low" id="lowCount">0</div>
+                            <div class="summary-label">검토 사항</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analysis-content" id="analysisContent">
+                    <!-- 분석 결과가 여기에 표시됩니다 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

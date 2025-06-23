@@ -1,0 +1,16 @@
+{
+  "name": "labor-contract-analyzer",
+  "version": "1.0.0",
+  "description": "근로계약서 검토 시스템 POC",
+  "scripts": {
+    "dev": "echo 'Open index.html in browser'",
+    "build": "echo 'No build required'"
+  },
+  "keywords": [
+    "labor-contract",
+    "contract-analysis",
+    "korean-labor-law"
+  ],
+  "author": "BASEONE",
+  "license": "MIT"
+}
